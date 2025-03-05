@@ -7,7 +7,7 @@ on:
     branches:
     - main
     
-  workflow_dispatch: #adds a 'run now' button
+  workflow_dispatch: #adds a 'run now' button 
   
 permissions:
   contents: read
