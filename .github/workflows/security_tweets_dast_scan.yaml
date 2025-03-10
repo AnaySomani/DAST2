@@ -26,13 +26,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Create Output folder
         run: mkdir ${{ github.workspace }}/output_fold
       - name: Change dir owner
         run: sudo chown -R 1000:1000 ${{ github.workspace }}
       - name: Checkmarx DAST Github Action
-        uses: Checkmarx/dast-github-action@v1.0.0-beta
+        uses: Checkmarx/dast-github-action@v1.0.6
         env:
           # prod
           CX_APIKEY: ${{ secrets.CX_APIKEY }}
@@ -43,7 +43,7 @@ jobs:
             config: './security_tweets.yaml'
             log_level: info
             #prod
-            base_url: "https://deu.ast.checkmarx.net"
+            base_url: "https://deu.ast.checkmarx.net/"
             environment_id: "29789737-b572-418d-beb9-cc0aab87d5e1"
             # canary
             #base_url: "https://deu.ast.checkmarx.net"
