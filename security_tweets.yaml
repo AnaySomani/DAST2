@@ -5,7 +5,7 @@ env:
       urls:
         - "http://testhtml5.vulnweb.com/"
       includePaths:
-        - "http://testhtml5.vulnweb.com/.*"
+        - "http://testhtml5.vulnweb.com/*"
       excludePaths: []
       authentication:
         method: "form"
