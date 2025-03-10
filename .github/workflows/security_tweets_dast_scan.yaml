@@ -31,8 +31,8 @@ jobs:
         run: mkdir ${{ github.workspace }}/output_fold
       - name: Change dir owner
         run: sudo chown -R 1000:1000 ${{ github.workspace }}
-      - name: Checkmarx DAST Github Action
-        uses: Checkmarx/dast-github-action@v1.0.6
+      - name: run dast web
+        uses: checkmarx/dast-action@latest
         env:
           # prod
           CX_APIKEY: ${{ secrets.CX_APIKEY }}
