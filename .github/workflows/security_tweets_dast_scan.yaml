@@ -35,7 +35,7 @@ jobs:
         uses: Checkmarx/dast-github-action@v1.0.6
         env:
           # prod
-          CX_APIKEY: ${{ secrets.CX_APIKEY }}
+          CX_APIKEY: ${{ eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0NmM5YThiYy0xYTliLTQyNjItOGRhNi1hM2M0MGE4YWJhMzYifQ.eyJpYXQiOjE3NDE1ODMyNzEsImp0aSI6ImUxMTIzMTFiLTQ4MDYtNDExOS04ODFhLWRiYTZhZDY3NTQ3YiIsImlzcyI6Imh0dHBzOi8vZGV1LmlhbS5jaGVja21hcngubmV0L2F1dGgvcmVhbG1zL2N4LWNzLW5hLXBzcG9jIiwiYXVkIjoiaHR0cHM6Ly9kZXUuaWFtLmNoZWNrbWFyeC5uZXQvYXV0aC9yZWFsbXMvY3gtY3MtbmEtcHNwb2MiLCJzdWIiOiI0MmQyOTc3ZC1jYzlmLTRjY2MtYjc0MS00ZWI0MmMyZjRiOGMiLCJ0eXAiOiJPZmZsaW5lIiwiYXpwIjoiYXN0LWFwcCIsInNpZCI6ImU0M2RkNmM3LWUxMTQtNDdlMS1hNjM5LTFhZmE1OWY4ZDZhZiIsInNjb3BlIjoicm9sZXMgcHJvZmlsZSBncm91cHMgYXN0LWFwaSBpYW0tYXBpIGVtYWlsIG9mZmxpbmVfYWNjZXNzIn0.R9Ton30l4PixsrTKUBx0x3ho7XYWEg21GaR0QgDztchWmwH-LDEGPydzggTibdpGoYSZtSvh-UFF_HnTDryGnw }}
           # canary: 
           # CX_APIKEY: ${{ secrets.CANARY_API_KEY }}
         with:
